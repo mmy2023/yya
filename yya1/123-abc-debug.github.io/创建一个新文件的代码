@@ -1,0 +1,3 @@
+ifconfig | grep -ioE  "inet(6|)\s[a-z0-9:.]*" | sed -e 's/$/<p>/'      > temp.html
+  echo $(date ) >>  ipaddresses.html
+  cat  ipaddresses.html 
