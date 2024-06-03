@@ -1,0 +1,88 @@
+
+创建一个html文件
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my REPLACE ME with repository name </title>
+  </head>
+  <body>
+    <h1>Hello World from  REPLACE ME with repository name </h1>
+ <!-- ipaddresses paste next line -->
+   <h4 id="id01">AAAA</h4>
+   <h5 id="id02">AAAA</h5>
+  </body>
+<script>
+   const date = new Date();
+   const date1 = date.toLocaleString("en-uk", {
+  	hour12: true,  weekday: "short",  hour: "2-digit",   minute: "2-digit",  second: "2-digit",
+  	month: "2-digit",  year: "numeric",  day: "2-digit"  });
+      document.getElementById("id01").innerHTML = "" + date1;
+      document.getElementById("id02").innerHTML = "" + Date.now();</script>
+</html>
+
+免密登录
+ssh-keygen -t ed25519 -C "your@email.com"
+ls -l ~/.ssh
+ssh-add ~/.ssh/id_ed25519
+ssh-add -l
+cat ~/.ssh/id_ed25519.pub
+
+把SSH的代码克隆到本地
+cd ~
+mkdir repos
+cd repos
+git clone 网址 
+后面就是检验一下是否真正克隆成功了，省略
+
+再创建一个文件
+sudo apt install net-tool
+ifconfig | grep -ioE  "inet(6|)\s[a-z0-9:.]*" | sed -e 's/$/<p>/'      > temp.html
+> temp.html
+
+echo $(date) >>  ipaddresses.html
+cat ipaddresses.html
+
+后面就是把这个ipaddresses.html上传
+首先要进行身份确认
+git config   user.email "you@example.com"
+git config   user.name "Your Name"
+
+
+git status
+git add .
+git status
+git commit -m  'created ipaddress.html'
+
+再把 ipaddresses.html上传到github
+git push origin main
+
+
+再编辑一下ipaddress.html文件
+<br>
+<div id="list">
+       <iframe  width="400" height="185" src="./ipaddresses.html" 
+                     frameborder="0" >
+          </iframe>
+</div>
+
+上传
+git status
+git add .  
+git commit -m "ipaddresses index.html"
+git push origin main
+
+可以通过readme来查看提交信息
+
+再创建一个404.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my 404</title>
+  </head>
+  <body>
+    <h3>Sorry page does not exist </h3>
+   <h1 id="id01">AAAA</h1>
