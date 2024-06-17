@@ -112,3 +112,9 @@ cs2024s2 Pages Assessment =====================
 Involves * cs2024s2
 * git * GitHub
 * SSH
+
+提示：Updates were rejected because the remote contains work that you do not
+提示：have locally. This is usually caused by another repository pushing to
+提示：the same ref. If you want to integrate the remote changes, use
+提示：'git pull' before pushing again.
+提示：See the 'Note about fast-forwards' in 'git push --help' for details.
