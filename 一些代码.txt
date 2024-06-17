@@ -107,3 +107,8 @@ document.getElementById("id01").innerHTML = "" + date1;
 document.getElementById("id02").innerHTML = "" + Date.now(); </script>
 </html>
 Answer Part j)
+
+cs2024s2 Pages Assessment =====================
+Involves * cs2024s2
+* git * GitHub
+* SSH
